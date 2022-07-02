@@ -25,7 +25,6 @@ function fetchallissues(url,ProjectPath,pn){
           //console.log(getIssuesText);
           //break;
           issues_text+= (i+1)+" "+ getIssuesText+"\n";
-          
       }
           const doc = new PDFDocument;
           doc.pipe(fs.createWriteStream(path.join(ProjectPath,pn+".pdf")));
